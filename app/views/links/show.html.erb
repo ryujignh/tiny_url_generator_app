@@ -1,0 +1,5 @@
+<h1>Preview of short url / <%= @link.short %></h1>
+
+This short url redirects to: <%= @link.url %>
+
+<%= link_to("Proceed to this site", redirect_path(url: @link.url)) %>

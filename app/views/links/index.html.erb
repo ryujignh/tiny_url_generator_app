@@ -1,0 +1,4 @@
+<h1>Links</h1>
+<% @links.each do |link| %>
+  <li><%= link_to(link.slug, short_path(slug: link.slug)) %></li>
+<% end %>
